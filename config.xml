@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<widget xmlns		= "http://www.w3.org/ns/widgets"
+	xmlns:gap	= "http://phonegap.com/ns/1.0"
+	id		= "com.phonegap.getting.started"
+	version 	= "1.0.0">
+
+	<name>MSMR</name>
+	<description>Audioguia Monestir de Santa Maria de Ripoll</description>
+	<author href="www.exitdesign.com" email="developers.exitdesign@gmail.com">
+        Exit de Disseny S.L.
+    </author>
+	
+	<preference name="orientation" value="portrait" />
+	<preference name="phonegap-version" value="2.0.0" />
+	<preference name="target-device" value="handset" />
+	<preference name="fullscreen" value="true" />
+	<preference name="webviewbounce" value="false" />
+	<preference name="prerendered-icon" value="true" />
+	<preference name="ios-statusbarstyle" value="black-opaque" />
+	
+	<icon src="icon.png" gap:role="default" />
+	
+	<gap:splash src="splash.png" />
+	
+	<feature name="http://api.phonegap.com/1.0/notification"/>
+</widget>
