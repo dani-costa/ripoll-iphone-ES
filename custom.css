@@ -1,6 +1,10 @@
 
 /* ====== ESTILOS GENERALES UI ====== */
 
+.btn-audio-next{width: 100px;}
+.btn-audio-next .ui-btn-text{margin-left: -50px;}
+.ui-icon-arrow-r {margin-left: 61px;}
+.btn-audio-prev{width: 100px;}
 
 body {
 	font-family:Helvetica,Arial,sans;
