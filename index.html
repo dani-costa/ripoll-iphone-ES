@@ -74,6 +74,16 @@ window.addEventListener('load', loaded, false);
 
 
 <script type="text/javascript">
+
+$("a.button").click(function() { $(this).attr("disabled", "disabled"); });
+$(document).click(function(evt) {
+     if ($(evt.target).is("a[disabled]"))
+          return false;
+});
+
+
+
+
 $( '#page100' ).live( 'pageshow',function(event){
   var player = $('audio').get(0);
   if (player!=null) player.play();
