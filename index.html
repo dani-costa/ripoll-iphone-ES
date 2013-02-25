@@ -80,7 +80,7 @@ function do_nothing() {
 }
 
 // prevent a second click for 10 seconds. :)
-$('.button').live('click', function(e) {
+$('.btn-audio-next').live('click', function(e) {
   $(e.target).click(do_nothing);
   setTimeout(function(){
     $(e.target).unbind('click', do_nothing);
