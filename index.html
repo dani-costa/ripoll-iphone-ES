@@ -75,10 +75,16 @@ window.addEventListener('load', loaded, false);
 
 <script type="text/javascript">
 
-$("a.button").click(function() { $(this).attr("disabled", "disabled"); });
-$(document).click(function(evt) {
-     if ($(evt.target).is("a[disabled]"))
-          return false;
+function do_nothing() {
+  return false;
+}
+
+// prevent a second click for 10 seconds. :)
+$('.button').live('click', function(e) {
+  $(e.target).click(do_nothing);
+  setTimeout(function(){
+    $(e.target).unbind('click', do_nothing);
+  }, 1000);
 });
 
 
